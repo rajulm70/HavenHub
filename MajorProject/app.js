@@ -18,7 +18,7 @@ async function main() {
         await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            connectTimeoutMS: 30000, // Increase connection timeout to 30 seconds
+            connectTimeoutMS: 10000, // Increase connection timeout to 30 seconds
         });
         console.log("MongoDB connection successful");
     } catch (err) {
