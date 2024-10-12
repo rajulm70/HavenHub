@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config(); 
 const app = express();
 const mongoose = require('mongoose');
 const Listing = require("./models/listing.js");
@@ -13,11 +14,15 @@ const Login = require("./models/login.js");
 
 
 
+
+
 main().then(() => { console.log("Connection Succesful") })
     .catch(err => console.log(err));
 
+
+
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/HavenHub');
+    await mongoose.connect(process.env.MONGODB_URI);
 }
 
 app.set("view engine", "ejs");
