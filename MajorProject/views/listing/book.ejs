@@ -1,0 +1,95 @@
+<% layout('/layouts/boilerplate') -%>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <br><br>
+                <h2>Booking Deatils</h2>
+                <form method="post" action="#" novalidate
+                    class="needs-validation">
+                    <div class="mb-3">
+                        <h3 class="title-book">
+                            <%= listing.title %>
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="firstName" class="form-label">First Name </label>
+                            <input class="form-control" required>
+                            <div class="invalid-feedback">Enter a valid first name</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="lasttName" class="form-label">Last Name </label>
+                            <input class="form-control" required>
+                            <div class="invalid-feedback" >Enter a valid last name</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input class="form-control" placeholder="havenhub@gmail.com" required>
+                            <div class="invalid-feedback">Enter a valid email</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="guests" class="form-label">Number Of Guests</label>
+                            <input class="form-control" placeholder="eg: 2-4" required>
+                            <div class="invalid-feedback">Please enter valid number of guests .</div>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="date" class="form-label">Arrival Date</label>
+                            <input class="form-control" placeholder="eg: 15-01-2024" required>
+                            <div class="invalid-feedback">Please enter a valid date .</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">Price</label>
+                            <input name="listing[price]" value="<%= listing.price %>" class="form-control"
+                                required>
+                            <div class="invalid-feedback">Please enter a valid price.</div>
+                        </div>
+
+                        <div class="mb-3 col-md-8">
+                            <label for="location" class="form-label">Location</label>
+                            <input name="listing[location]" value="<%= listing.location %>" type="text"
+                                class="form-control" required>
+                            <div class="invalid-feedback">Please enter a valid location.</div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="listing[country]" value="<%= listing.country %>" type="text" class="form-control"
+                            required>
+                        <div class="invalid-feedback">Please enter a valid country.</div>
+                    </div>
+
+                    <br><br>
+                    <button class="btn btn-success">Pay Now</button><br><br>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <form method="post" action="/listings/<%= listing._id %>?_method=PUT">
+        <input name="listing[title]" value="<%= listing.title %>" type="text">
+        <br><br>
+        <textarea name="listing[description]"><%= listing.description %></textarea>
+        <br><br>
+        <input name="listing[image]" value="<%= listing.image %>" type="text">
+        <br><br>
+        <input name="listing[price]" value="<%= listing.price %>" type="number">
+        <br><br>
+        <input name="listing[location]" value="<%= listing.location %>" type="text">
+        <br><br>
+        <input name="listing[country]" value="<%= listing.country %>" type="text">
+        <br><br>
+        <button>Edit</button>
+    </form> -->
+    </body>

@@ -1,0 +1,319 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.container{
+    flex:1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.navbar-brand{
+    color: #fe424d;
+}
+.nav-link{
+    color: black !important;
+
+}
+
+/* Footer */
+.f-info{
+    text-align: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-links a:hover{
+    text-decoration: underline;
+}
+.f-social, .f-links{
+    width: 100%;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    
+}
+.f-social i{
+    margin-right: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-social{
+    margin-top: 0.5rem;
+}
+
+/* Card */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card img{
+    border-radius: 1rem;
+}
+.card-body{
+    padding: 0 !important;
+    color: #222222;
+}
+
+
+#btn-edit{
+    text-decoration: none;
+    color: white;
+}
+.btns{
+    display: flex;
+}
+.btn-1{
+    height: 2.5rem;
+    width: 5rem;
+}
+.btn-book{
+    width: 100px;
+
+}
+.btn-book a{
+    text-decoration: none;
+    color: white;
+}
+.btn-book a:hover{
+    color: white;
+}
+.title-book{
+    color: #fe424d;
+    font-weight: 700;
+}
+.btn-login{
+    background-color: #fe424d;
+    color: white;
+    font-weight: 700;
+    width: 80px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.btn-login:hover{
+    transform: scale(1.05);
+}
+.btn-signup:hover{
+    transform: scale(1.05);
+}
+.btn-signup{
+    background-color: #37bc1d;
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+#inner-text-btn{
+    color: white;
+    text-decoration: none;
+}
+.back-home{
+    background-image: url("https://media.cntraveler.com/photos/64879b50add73e0d14b17f9e/16:9/w_2580,c_limit/Most-Adventurous-things-to-do-in-your-lifetime-(update)_timur-garifov-sisZWCDkmwA-unsplash.jpg");
+    background-repeat: no-repeat;
+    /* height: 500px; */
+    height: 180vh;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.title-div{
+    height: 100px;
+}
+.title-home{
+    color: rgb(83, 81, 81);
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3.5rem;
+}
+b{
+    color: #fe424d;
+}
+.cards-grp{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    gap: 12%;
+}
+.sub-card{
+    height: 300px !important;
+    width: 250px !important;
+    border-radius: 5% !important;
+    background-color: rgb(201, 209, 209) !important;
+    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 1), 0 6px 20px 0 rgba(87, 86, 86, 1);
+    text-align: center;
+    cursor: pointer;
+}
+.sub-card:hover{
+    transform: scale(1.05);
+}
+.img-card{
+    border-radius: 0% !important;
+    border-top-left-radius: 5% !important;
+    border-top-right-radius: 5% !important;
+    height: 200px !important;
+}
+.form-explore{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-explore{
+    background-color: rgb(28, 134, 28);
+    color: white;
+    font-weight: 700;
+    border-radius: 5%;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 40px;
+
+}
+.btn-explore:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* Just for trial */
+.slide-cards {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-top: 10%;
+}
+
+.slider-container {
+    width: 1280px;
+    /* 300px * 3 cards */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.card-new {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    background: #fff;
+    margin: 10px;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px 0 rgba(250, 248, 248, 0.3), 0 6px 20px 0 rgba(252, 252, 252, 0.3);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-new img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 8% ;
+    border-top-right-radius: 8% ;
+}
+.title-home-1{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+}
+.login-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5%;
+}
+.card-login:hover{
+    transform: scale(1.02);
+}
+.card-login{
+    width: 280px !important;
+    text-align: center;
+    border-radius: 5% !important;
+    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 1), 0 6px 20px 0 rgba(87, 86, 86, 1);
+}
+.login-img{
+    height: 200px;
+    border-top-left-radius: 5% !important;
+    border-top-right-radius: 5% !important;
+    border-bottom-right-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+}
+.email-div{
+    display: flex;
+    margin: 2%;
+}
+.email-div input{
+    width: 190px;
+    height: 30px;
+}
+.login-body{
+    background-color: #f5e7e8;
+}
+.card-body a{
+    color: black;
+}
+.card-body a:hover{
+    color :#fe424d;
+}
+#radio-terms{
+    width: 20px;
+    height: 20px;
+}
+.btn-signup-create{
+    background-color: #37bc1d;
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.btn-signup-create:hover{
+    transform: scale(1.05);
+}
+.signup-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.card-body-loginAs{
+    padding: 0 !important;
+    color: #222222;
+    display: flex;
+    margin: 2%;
+}
+.card-body-loginAs select{
+    width: 190px;
+    height: 33px;
+}

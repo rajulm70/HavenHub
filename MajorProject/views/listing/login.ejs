@@ -1,0 +1,85 @@
+<!-- <% layout('/layouts/boilerplate') -%>
+
+    <body class="login-body">
+        <div class="login-main">
+            <div class="card card-login" style="width: 18rem;">
+                <img src="https://png.pngtree.com/png-vector/20220814/ourlarge/pngtree-rounded-vector-icon-in-flat-black-and-white-for-user-profile-vector-png-image_19500858.jpg"
+                    class="card-img-top login-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-2">Hey, User!</h5>
+                </div>
+                
+
+                <form class="needs-validation" method="post" action="/home/validate" novalidate>
+                    <div class="card-body-loginAs mt-2">
+                        <label for="As" class="form-label">Login As: &nbsp;&nbsp;</label>
+                        <select name="As" id="loginAs" class="form-control">
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="email-div">
+                        <label for="email" class="form-label">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input placeholder="haven.hub@gmail.com" name="email" required class="form-control">
+                    </div>
+                    <div class="email-div">
+                        <label for="password" class="form-label">Password: &nbsp;</label>
+                        <input placeholder="****" name="password" type="password" required class="form-control">
+                    </div>
+                    <button class="btn-signup mt-4 mb-4">Login</button>
+                </form>
+
+                <div class="card-body">
+                    <a href="/home" class="card-link">Back</a>
+                    <a href="/home/signup" class="card-link">Haven't Account?</a>
+                </div>
+            </div>
+        </div>
+
+    </body> -->
+
+    <% layout('/layouts/boilerplate') -%>
+
+    <body class="login-body">
+        <div class="login-main">
+            <div class="card card-login" style="width: 18rem;">
+                <img src="https://png.pngtree.com/png-vector/20220814/ourlarge/pngtree-rounded-vector-icon-in-flat-black-and-white-for-user-profile-vector-png-image_19500858.jpg"
+                    class="card-img-top login-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title mt-2">Hey, User!</h5>
+                </div>
+                
+                <form class="needs-validation" method="post" action="/home/validate" novalidate>
+                    <div class="card-body-loginAs mt-2">
+                        <label for="As" class="form-label">Login As: &nbsp;&nbsp;</label>
+                        <select name="As" id="loginAs" class="form-control">
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="email-div">
+                        <label for="email" class="form-label">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input placeholder="haven.hub@gmail.com" name="email" required class="form-control">
+                    </div>
+                    <div class="email-div">
+                        <label for="password" class="form-label">Password: &nbsp;</label>
+                        <input placeholder="****" name="password" type="password" required class="form-control">
+                    </div>
+                    <button class="btn-signup mt-4 mb-4">Login</button>
+                </form>
+    
+                <div class="card-body">
+                    <a href="/home" class="card-link">Back</a>
+                    <a href="/home/signup" class="card-link">Haven't Account?</a>
+                </div>
+            </div>
+        </div>
+    
+        <% if (typeof error !== 'undefined') { %>
+            <script>
+                alert("<%= error %>");
+            </script>
+        <% } %>
+    
+    </body>
+    
